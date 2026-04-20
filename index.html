@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Hassan – UI/UX Designer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="progress-bar"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar">
+      <div class="container nav-inner">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="#hero" class="nav-logo">LOGO</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <a href="#contact" class="btn-hire-nav">Hire Me</a>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-tag">Hi I am</p>
+            <h1 class="hero-name" id="heroName"></h1>
+            <h2 class="hero-title">
+              <span id="heroTitleText"></span
+              ><span class="tw-cursor" id="twCursor"></span>
+            </h2>
+            <div class="hero-socials">
+              <a href="#" class="social-icon" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="Dribbble"
+                ><i class="fab fa-dribbble"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="Behance"
+                ><i class="fab fa-behance"></i
+              ></a>
+            </div>
+            <div class="hero-btns">
+              <a href="#contact" class="btn-primary">Hire Me</a>
+              <a href="#" class="btn-outline"
+                ><i class="fas fa-download"></i> Download CV</a
+              >
+            </div>
+            <div class="hero-stats stagger">
+              <div class="stat-item">
+                <span class="stat-num" data-target="5">0+</span
+                ><span class="stat-label">Experiences</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="20">0+</span
+                ><span class="stat-label">Project done</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="80">0+</span
+                ><span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-img-wrap">
+              <div class="hero-circle"></div>
+              <img
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80&fit=crop&crop=face"
+                alt="Mahmood Fazile"
+              />
+              <div class="hero-badge">✦ Available for work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
+            felis ligula aliquam
+          </p>
+        </div>
+        <div class="services-grid stagger">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>App Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet
+              consectetur
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-desktop"></i></div>
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet
+              consectetur
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet
+              consectetur
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>Branding</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet
+              consectetur
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-film"></i></div>
+            <h3>Video Editing</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet
+              consectetur
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Prototyping</h3>
+            <p>
+              Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet
+              consectetur
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>About Me</h2>
+          <p>User Interface And User Experience And Also Video Editing</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-img-wrap reveal-left">
+            <div class="about-circle">
+              <img
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80&fit=crop&crop=face"
+                alt="About Mahmood"
+              />
+            </div>
+          </div>
+          <div class="about-text reveal-right">
+            <h2>About <span class="accent">Me</span></h2>
+            <p class="about-sub">UI/UX Designer &amp; Video Editor</p>
+            <p>
+              A software engineer, the modern-day architect of digital realms,
+              navigates the ethereal landscapes of code, sculpting intangible
+              structures that shape our technological world. With fingers poised
+              over keyboards like virtuoso pianists, they compose symphonies of
+              logic, their minds a labyrinth of algorithms and solutions. Their
+              canvas is a screen, a vast expanse where lines of code dance in
+              intricate patterns, weaving the fabric of programs and
+              applications.
+            </p>
+            <a href="#" class="btn-primary"
+              ><i class="fas fa-download"></i> Download CV</a
+            >
+            <div class="skills-grid stagger">
+              <div class="skill-item">
+                <div class="skill-icon-wrap"><i class="fab fa-figma"></i></div>
+                <span class="skill-pct">100%</span
+                ><span class="skill-name">Figma</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-vector-square"></i>
+                </div>
+                <span class="skill-pct">100%</span
+                ><span class="skill-name">Adobe XD</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrap">
+                  <i class="devicon-photoshop-plain"></i>
+                </div>
+                <span class="skill-pct">85%</span
+                ><span class="skill-name">Photoshop</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrap">
+                  <i class="fas fa-pen-nib"></i>
+                </div>
+                <span class="skill-pct">60%</span
+                ><span class="skill-name">Illustrator</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrap"><i class="fas fa-film"></i></div>
+                <span class="skill-pct">70%</span
+                ><span class="skill-name">Premiere</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Portfolio</h2>
+          <p>
+            A showcase of my best UI/UX design work across web, mobile and
+            branding projects
+          </p>
+        </div>
+        <div class="portfolio-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Website Design">
+            Website Design
+          </button>
+          <button class="filter-btn" data-filter="App Desktop">
+            App Desktop
+          </button>
+          <button class="filter-btn" data-filter="Landing Page Design">
+            Landing Page Design
+          </button>
+          <button class="filter-btn" data-filter="App Mobile Design">
+            App Mobile Design
+          </button>
+          <button class="filter-btn" data-filter="Branding">Branding</button>
+        </div>
+        <div class="portfolio-grid stagger" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT  (Code 1 layout) ==================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Contact Me</h2>
+          <p>
+            Have a project in mind? Let's work together to bring your ideas to
+            life
+          </p>
+        </div>
+        <div class="contact-grid">
+          <!-- Left column: contact info -->
+          <div class="contact-info reveal-left">
+            <h3>Let's <span class="accent">Talk</span></h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas or
+              opportunities to be part of your visions.
+            </p>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <span>Email</span>
+                <strong>ali.hassan@gmail.com</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-item-text">
+                <span>Phone</span>
+                <strong>+93 729 107 005</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-item-text">
+                <span>Location</span>
+                <strong>Available Worldwide</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column: form -->
+          <div class="reveal-right">
+            <form class="contact-form" onsubmit="handleForm(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cName">Your Name</label>
+                  <input
+                    type="text"
+                    id="cName"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cEmail">Email Address</label>
+                  <input
+                    type="email"
+                    id="cEmail"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cSubject">Subject</label>
+                <input
+                  type="text"
+                  id="cSubject"
+                  placeholder="Project Inquiry"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cMessage">Message</label>
+                <textarea
+                  id="cMessage"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn-primary"
+                id="sendBtn"
+                style="align-self: flex-start"
+              >
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="container">
+        <!-- Desktop footer (Code 1 style) -->
+        <div class="footer-inner reveal">
+          <span class="footer-logo">LOGO</span>
+          <p class="footer-copy">© 2026 Ali Hassan. All rights reserved.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Dribbble"
+              ><i class="fab fa-dribbble"></i
+            ></a>
+            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Mobile footer (Code 2 boxed style) — hidden on desktop via CSS -->
+        <div class="footer-box-mobile reveal">
+          <div class="fb-logo">LOGO</div>
+          <nav class="fb-nav">
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact me</a>
+          </nav>
+          <div class="fb-socials">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Dribbble"
+              ><i class="fab fa-dribbble"></i
+            ></a>
+            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+          </div>
+          <div class="fb-contacts">
+            <a href="mailto:Mahmood.fazile7005@gmail.com"
+              ><i class="fas fa-envelope"></i> Mahmood.fazile7005@gmail.com</a
+            >
+            <a href="tel:+93729107005"
+              ><i class="fas fa-phone"></i> +93 729 107 005</a
+            >
+          </div>
+          <div class="fb-divider"></div>
+          <p class="fb-copy">Designed by @mahmood.fazile UI/UX designer</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== MODAL ==================== -->
+    <div
+      class="modal-backdrop"
+      id="modalBackdrop"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-box" id="modalBox">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="" class="modal-img" id="modalImg" />
+        <div class="modal-body">
+          <h3 id="modalTitle"></h3>
+          <span class="modal-category" id="modalCategory"></span>
+          <p id="modalDesc"></p>
+          <div class="modal-tags" id="modalTags"></div>
+          <div class="modal-links">
+            <a
+              href="#"
+              class="btn-primary"
+              id="modalDemo"
+              target="_blank"
+              rel="noopener"
+              ><i class="fas fa-external-link-alt"></i> Live Demo</a
+            >
+            <a
+              href="#"
+              class="btn-outline"
+              id="modalGithub"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="back-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </body>
+</html>
