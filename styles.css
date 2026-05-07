@@ -1,7 +1,4 @@
-      /* ================================================
-       CSS CUSTOM PROPERTIES  (single source of truth)
-    ================================================ */
-      :root {
+    :root {
         --clr-accent: #fd6f00;
         --clr-accent-dark: #e46400;
         --clr-accent-deep: #ca5900;
@@ -45,8 +42,6 @@
         --shadow-card: 0 4px 32px rgba(0, 0, 0, 0.45);
         --shadow-accent: 0 0 24px rgba(253, 111, 0, 0.25);
       }
-
-      /* ================================================ RESET ================================================ */
       *,
       *::before,
       *::after {
@@ -80,8 +75,6 @@
       button {
         font-family: var(--ff-body);
       }
-
-      /* ================================================ UTILITY ================================================ */
       .container {
         width: min(92%, 1200px);
         margin-inline: auto;
@@ -107,7 +100,6 @@
         margin-inline: auto;
       }
 
-      /* ================================================ KEYFRAMES ================================================ */
       @keyframes navSlide {
         from {
           transform: translateY(-100%);
@@ -183,7 +175,6 @@
         }
       }
 
-      /* ================================================ SCROLL REVEALS ================================================ */
       .reveal {
         opacity: 0;
         transform: translateY(40px);
@@ -248,8 +239,21 @@
         transform: none;
         transition-delay: 0.55s;
       }
-
-      /* ================================================ PROGRESS BAR ================================================ */
+.stagger.visible > *:nth-child(7) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.65s;
+}
+.stagger.visible > *:nth-child(8) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.75s;
+}
+.stagger.visible > *:nth-child(9) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.85s;
+}
       #progress-bar {
         position: fixed;
         top: 0;
@@ -265,7 +269,7 @@
         transition: width 0.1s linear;
       }
 
-      /* ================================================ NAVBAR ================================================ */
+      /* NAVBAR */
       #navbar {
         position: fixed;
         top: 0;
@@ -371,7 +375,7 @@
         transform: rotate(-45deg) translate(5px, -5px);
       }
 
-      /* ================================================ HERO ================================================ */
+      /* HERO */
       #hero {
         min-height: 100vh;
         display: flex;
@@ -623,12 +627,11 @@
         animation: float 4s ease-in-out 1s infinite;
       }
 
-      /* ================================================ SECTIONS ================================================ */
       section {
         padding: var(--section-py) 0;
       }
 
-      /* ================================================ SERVICES ================================================ */
+      /* SERVICES */
       #services {
         background: var(--clr-bg-2);
       }
@@ -708,7 +711,7 @@
         line-height: 1.7;
       }
 
-      /* ================================================ ABOUT ================================================ */
+      /* ABOUT */
       #about {
         background: var(--clr-bg);
       }
@@ -796,7 +799,7 @@
         color: var(--clr-accent);
       }
 
-      /* ================================================ PORTFOLIO ================================================ */
+      /* PORTFOLIO */
       #portfolio {
         background: var(--clr-bg-2);
       }
@@ -946,7 +949,7 @@
         color: var(--clr-grey-3);
       }
 
-      /* ================================================ MODAL ================================================ */
+      /* MODAL */
       .modal-backdrop {
         position: fixed;
         inset: 0;
@@ -1054,9 +1057,7 @@
         transform: rotate(90deg);
       }
 
-      /* ================================================
-       CONTACT  ← taken from Code 1 (two-column layout)
-    ================================================ */
+      /* CONTACT */
       #contact {
         background: var(--clr-bg);
       }
@@ -1066,8 +1067,6 @@
         gap: var(--space-xl);
         align-items: start;
       }
-
-      /* left col */
       .contact-info h3 {
         font-family: var(--ff-display);
         font-size: var(--fs-xl);
@@ -1117,8 +1116,6 @@
         font-size: var(--fs-sm);
         color: var(--clr-white);
       }
-
-      /* right col – form */
       .contact-form {
         display: flex;
         flex-direction: column;
@@ -1167,9 +1164,7 @@
         min-height: 130px;
       }
 
-      /* ================================================
-       FOOTER  ← Code 1 desktop layout
-    ================================================ */
+      /* FOOTER */
       footer {
         background: var(--clr-bg-2);
         border-top: 1px solid var(--clr-card-border);
@@ -1207,13 +1202,10 @@
         color: var(--clr-accent);
         transform: translateY(-2px);
       }
-
-      /* Code 2 boxed footer – HIDDEN on desktop, shown on mobile */
       .footer-box-mobile {
         display: none;
       }
 
-      /* ================================================ BACK TO TOP ================================================ */
       #back-top {
         position: fixed;
         bottom: 2rem;
@@ -1244,9 +1236,120 @@
         background: var(--clr-accent-dark);
       }
 
-      /* ================================================
-       RESPONSIVE
-    ================================================ */
+      /* EDUCATION SECTION */
+      #education {
+        background: var(--clr-bg);
+      }
+      .edu-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .edu-card {
+        background: var(--clr-card);
+        border: 1px solid var(--clr-card-border);
+        border-radius: var(--card-radius);
+        padding: var(--space-md) var(--space-lg);
+        position: relative;
+        transition:
+          border-color var(--tr-base),
+          transform var(--tr-base),
+          box-shadow var(--tr-base);
+      }
+      .edu-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: var(--clr-accent);
+        border-radius: var(--card-radius) 0 0 var(--card-radius);
+      }
+      .edu-card:hover {
+        border-color: var(--clr-accent);
+        transform: translateX(6px);
+        box-shadow: var(--shadow-card);
+      }
+      .edu-year {
+        font-size: var(--fs-xs);
+        color: var(--clr-accent);
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+        letter-spacing: 1px;
+      }
+      .edu-degree {
+        font-family: var(--ff-display);
+        font-size: var(--fs-md);
+        font-weight: 700;
+        color: var(--clr-white);
+        margin-bottom: 0.3rem;
+      }
+      .edu-institution {
+        font-size: var(--fs-sm);
+        color: var(--clr-grey-3);
+      }
+      .edu-note {
+        font-size: var(--fs-xs);
+        color: var(--clr-grey-2);
+        margin-top: 0.3rem;
+        font-style: italic;
+      }
+
+      /* CERTIFICATIONS */
+      #certifications {
+        background: var(--clr-bg-2);
+      }
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+      }
+      .cert-card {
+        background: var(--clr-card);
+        border: 1px solid var(--clr-card-border);
+        border-radius: var(--card-radius);
+        padding: var(--space-md);
+        transition:
+          border-color var(--tr-base),
+          transform var(--tr-base),
+          box-shadow var(--tr-base);
+      }
+      .cert-card:hover {
+        border-color: var(--clr-accent);
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-card), var(--shadow-accent);
+      }
+      .cert-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(253, 111, 0, 0.1);
+        border: 1px solid rgba(253, 111, 0, 0.3);
+        display: grid;
+        place-items: center;
+        color: var(--clr-accent);
+        font-size: 1.2rem;
+        margin-bottom: var(--space-sm);
+      }
+      .cert-title {
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        color: var(--clr-white);
+        margin-bottom: 0.3rem;
+      }
+      .cert-issuer {
+        font-size: var(--fs-xs);
+        color: var(--clr-accent);
+      }
+      .cert-date {
+        font-size: var(--fs-xs);
+        color: var(--clr-grey-3);
+        margin-top: 0.2rem;
+      }
+
       @media (max-width: 1024px) {
         .services-grid {
           grid-template-columns: repeat(2, 1fr);
@@ -1257,15 +1360,15 @@
         .skills-grid {
           grid-template-columns: repeat(3, 1fr);
         }
+        .cert-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
-
       @media (max-width: 768px) {
         :root {
           --section-py: 4rem;
           --section-gap: 2rem;
         }
-
-        /* NAV mobile */
         .nav-inner {
           position: relative;
         }
@@ -1303,8 +1406,6 @@
           font-size: var(--fs-xs);
           padding: 0.4rem 0.9rem;
         }
-
-        /* HERO mobile */
         #hero {
           padding-top: calc(var(--nav-h) + var(--space-md));
           padding-bottom: 0;
@@ -1354,8 +1455,6 @@
         .hero-badge {
           right: 10px;
         }
-
-        /* ABOUT mobile */
         .about-grid {
           grid-template-columns: 1fr;
           gap: var(--space-lg);
@@ -1367,11 +1466,6 @@
           aspect-ratio: unset;
           height: 320px;
         }
-        .about-circle img {
-          object-position: center top;
-        }
-
-        /* PORTFOLIO / SERVICES / SKILLS mobile */
         .portfolio-grid {
           grid-template-columns: repeat(2, 1fr);
         }
@@ -1381,8 +1475,6 @@
         .skills-grid {
           grid-template-columns: repeat(3, 1fr);
         }
-
-        /* ── CONTACT mobile ── stack to single column */
         .contact-grid {
           grid-template-columns: 1fr;
           gap: var(--space-lg);
@@ -1390,16 +1482,16 @@
         .form-row {
           grid-template-columns: 1fr;
         }
-
-        /* ── FOOTER mobile: hide desktop footer, show Code-2 boxed footer ── */
         .footer-inner {
           display: none;
         }
         .footer-box-mobile {
           display: block;
         }
+        .cert-grid {
+          grid-template-columns: 1fr;
+        }
       }
-
       @media (max-width: 480px) {
         .portfolio-grid {
           grid-template-columns: 1fr;
@@ -1419,8 +1511,6 @@
           height: 240px;
         }
       }
-
-      /* ── Code-2 boxed footer shared styles (used only on mobile) ── */
       .footer-box-mobile {
         background: var(--clr-bg-3);
         border: 1px solid var(--clr-card-border);

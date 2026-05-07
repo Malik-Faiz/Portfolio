@@ -1,79 +1,118 @@
-
-      /* -------------------------------------------------------
-   DATA
-------------------------------------------------------- */
-      const projects = [
+const projects = [
         {
-          title: "Undercover Dashboard",
-          category: "App Desktop",
-          img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
-          desc: "A feature-rich analytics dashboard for desktop applications. Focuses on data clarity, visual hierarchy and executive-level reporting with interactive charts and real-time metrics.",
-          tags: ["Adobe XD", "Dashboard", "Data Viz", "Desktop"],
+          title: "AI Agent – Intelligent Cobot for Education",
+          category: "AI & LLM",
+          img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80",
+          desc: "Researching and developing a smart collaborative robot (Cobot) that adapts its role as teacher, student, or peer. The robot uses AI to clarify topics for shy students and help teachers prepare learning materials efficiently. Ongoing research project at UPPA.",
+          tags: ["Python", "Robotics", "AI Agent", "Cobot Frameworks", "NLP"],
           github: "#",
           demo: "#",
         },
         {
-          title: "Zalwa Portfolio",
-          category: "Website Design",
-          img: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80",
-          desc: "A sophisticated dark-theme portfolio website featuring bold typography, immersive hero sections and smooth scroll animations designed to showcase creative work with maximum visual impact.",
-          tags: ["Figma", "UI/UX", "Web Design", "Dark Theme"],
+          title: "Intelligent AI Agent Systems with RAG",
+          category: "AI & LLM",
+          img: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&q=80",
+          desc: "Engineered intelligent AI agent systems with Retrieval-Augmented Generation (RAG) for enhanced search functionality. Implemented multi-agent communication using Google Pub/Sub to coordinate distributed AI workflows with semantic search.",
+          tags: ["Python", "RAG", "FAISS", "Google Cloud", "LLM", "Embeddings"],
           github: "#",
           demo: "#",
         },
         {
-          title: "Soundpar App",
-          category: "App Mobile Design",
-          img: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80",
-          desc: "A minimalist music streaming mobile application with an intuitive dark interface, smooth micro-interactions and a sleek player design built with user-centered principles.",
-          tags: ["Figma", "Mobile UI", "App Design", "Music"],
+          title: "Deepfake Detection System",
+          category: "Computer Vision",
+          img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80",
+          desc: "Contributed to a deepfake detection project to distinguish between real and GAN-generated fake images. Pre-processed and augmented images to prevent overfitting and increased pipeline accuracy by 12% using fine-tuned MobileNet-v3.",
+          tags: [
+            "Python",
+            "TensorFlow",
+            "Keras",
+            "OpenCV",
+            "MobileNet-v3",
+            "CNN",
+          ],
           github: "#",
           demo: "#",
         },
         {
-          title: "Mountain Travel",
-          category: "Landing Page Design",
-          img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
-          desc: "A breathtaking travel landing page for mountain tourism with full-bleed photography, parallax effects, immersive destination cards and a seamless booking flow.",
-          tags: ["Figma", "Travel", "Landing Page", "UX"],
+          title: "Tanzania Deforestation Monitor",
+          category: "Machine Learning",
+          img: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80",
+          desc: "Collaborated on a real-time monitoring system for deforestation in Tanzania's Mangrove Forest. Led deployment efforts, built an interactive geospatial dashboard, and deployed trained ML models to monitor environmental change in real-time.",
+          tags: ["Python", "GIS Tools", "Dashboard", "Computer Vision", "ML"],
           github: "#",
           demo: "#",
         },
         {
-          title: "Ingenious Brand Kit",
-          category: "Branding",
-          img: "https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?w=600&q=80",
-          desc: "Complete branding identity system for a tech startup. Includes logo design, colour palette, typography guide, business card, social media templates and a comprehensive brand style guide.",
-          tags: ["Illustrator", "Branding", "Logo", "Identity"],
+          title: "Student Success Prediction",
+          category: "Machine Learning",
+          img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+          desc: "Developed a machine learning model achieving 87% accuracy to predict student success based on academic and demographic data. Helps institutions identify at-risk students early and enhance overall performance outcomes.",
+          tags: [
+            "Python",
+            "Scikit-learn",
+            "Predictive Modeling",
+            "Feature Engineering",
+          ],
           github: "#",
           demo: "#",
         },
         {
-          title: "Works Portfolio v2",
-          category: "Website Design",
-          img: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80",
-          desc: "Second iteration of a minimal portfolio website with an editorial grid layout, variable font animations, dark/light mode toggle and scroll-triggered reveals.",
-          tags: ["Figma", "Portfolio", "Minimal", "Animation"],
+          title: "NexaCareer – FYP Platform",
+          category: "Web Development",
+          img: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80",
+          desc: "Final Year Project — a specialized software platform for IT job fairs, seamlessly connecting final-year students with companies. Features an AI module for automatic CV classification and intelligent candidate-company matching.",
+          tags: ["React", "Node.js", "MySQL", "AI", "REST API", "Laravel"],
+          github: "#",
+          demo: "#",
+        },
+        {
+          title: "Dog Breed Prediction",
+          category: "Computer Vision",
+          img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
+          desc: "Built a deep neural network to classify dog breeds from images using advanced computer vision techniques. Leverages TensorFlow and Keras for model architecture with high classification accuracy across multiple breeds.",
+          tags: ["TensorFlow", "Keras", "Python", "Deep Learning", "CNN"],
+          github: "#",
+          demo: "#",
+        },
+        {
+          title: "Mango Leaf Disease Detection",
+          category: "Computer Vision",
+          img: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=600&q=80",
+          desc: "Created a computer vision-based model to detect diseases in mango leaves for early agricultural diagnosis and disease management. Helps the agricultural sector with preventive decision-making using image classification.",
+          tags: [
+            "Python",
+            "OpenCV",
+            "CNN",
+            "Computer Vision",
+            "Agriculture AI",
+          ],
+          github: "#",
+          demo: "#",
+        },
+        {
+          title: "Property Management System",
+          category: "Web Development",
+          img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+          desc: "A full-featured web platform to streamline property listing, management, and transactions. Built with Laravel for robust backend operations, MySQL for data persistence, and a clean responsive frontend for agents and buyers.",
+          tags: ["Laravel", "MySQL", "HTML/CSS", "PHP", "Web App"],
           github: "#",
           demo: "#",
         },
       ];
 
-      /* -------------------------------------------------------
-   TYPEWRITER
-------------------------------------------------------- */
       const ROLES = [
-        "UI/UX Designer",
-        "Product Designer",
-        "Visual Storyteller",
-        "Figma Expert",
-        "Creative Thinker",
+        "AI/ML Engineer",
+        "LLM Systems Builder",
+        "Data Scientist",
+        "Computer Vision Expert",
+        "Backend Developer",
+        "Master's Student @ UPPA",
       ];
-      const NAME_STR = "Ali Hassan";
-      const SPD_TYPE = 80;
-      const SPD_DEL = 45;
-      const PAUSE_END = 1800;
-      const PAUSE_NEXT = 350;
+      const NAME_STR = "Malik Faiz ur Rehman";
+      const SPD_TYPE = 70,
+        SPD_DEL = 40,
+        PAUSE_END = 1800,
+        PAUSE_NEXT = 350;
       const nameEl = document.getElementById("heroName");
       const titleSpan = document.getElementById("heroTitleText");
       let state = { phase: "name", charIdx: 0, roleIdx: 0, deleting: false };
@@ -110,9 +149,6 @@
       }
       window.addEventListener("load", () => setTimeout(tick, 900));
 
-      /* -------------------------------------------------------
-   PORTFOLIO RENDER
-------------------------------------------------------- */
       function renderPortfolio(filter = "all") {
         const grid = document.getElementById("portfolioGrid");
         const filtered =
@@ -122,36 +158,32 @@
         grid.innerHTML = filtered
           .map((p, i) => {
             const idx = projects.indexOf(p);
-            return `
-      <div class="portfolio-item" data-index="${idx}" style="transition-delay:${i * 0.08}s">
-        <div class="portfolio-img-wrap">
-          <img src="${p.img}" alt="${p.title}" loading="lazy" />
-          <div class="portfolio-overlay">
-            <div class="ovl-wrap">
-              <button class="overlay-btn" onclick="openModal(${idx})" aria-label="View Details"><i class="fas fa-expand-alt"></i></button>
-              <span class="ovl-tip">View Details</span>
+            return `<div class="portfolio-item" data-index="${idx}" style="transition-delay:${i * 0.08}s">
+            <div class="portfolio-img-wrap">
+              <img src="${p.img}" alt="${p.title}" loading="lazy"/>
+              <div class="portfolio-overlay">
+                <div class="ovl-wrap">
+                  <button class="overlay-btn" onclick="openModal(${idx})" aria-label="View Details"><i class="fas fa-expand-alt"></i></button>
+                  <span class="ovl-tip">View Details</span>
+                </div>
+                <div class="ovl-wrap">
+                  <a href="${p.demo}" class="overlay-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                  <span class="ovl-tip">Live Demo</span>
+                </div>
+                <div class="ovl-wrap">
+                  <a href="${p.github}" class="overlay-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <span class="ovl-tip">GitHub</span>
+                </div>
+              </div>
             </div>
-            <div class="ovl-wrap">
-              <a href="${p.demo}" class="overlay-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-              <span class="ovl-tip">Live Demo</span>
-            </div>
-            <div class="ovl-wrap">
-              <a href="${p.github}" class="overlay-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
-              <span class="ovl-tip">GitHub Repo</span>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-meta"><h4>${p.title}</h4><span>${p.category}</span></div>
-      </div>`;
+            <div class="portfolio-meta"><h4>${p.title}</h4><span>${p.category}</span></div>
+          </div>`;
           })
           .join("");
         grid.classList.remove("visible");
         requestAnimationFrame(() => grid.classList.add("visible"));
       }
 
-      /* -------------------------------------------------------
-   MODAL
-------------------------------------------------------- */
       function openModal(idx) {
         const p = projects[idx];
         document.getElementById("modalImg").src = p.img;
@@ -184,9 +216,6 @@
         if (e.key === "Escape") closeModal();
       });
 
-      /* -------------------------------------------------------
-   FILTERS
-------------------------------------------------------- */
       document.querySelectorAll(".filter-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
           document
@@ -198,9 +227,6 @@
         });
       });
 
-      /* -------------------------------------------------------
-   SCROLL REVEAL
-------------------------------------------------------- */
       function observeElements() {
         const obs = new IntersectionObserver(
           (entries) => {
@@ -220,9 +246,6 @@
           });
       }
 
-      /* -------------------------------------------------------
-   SCROLL EVENTS
-------------------------------------------------------- */
       const sections = document.querySelectorAll("section[id]");
       const navAs = document.querySelectorAll(".nav-links a");
       window.addEventListener("scroll", () => {
@@ -243,9 +266,6 @@
           .classList.toggle("visible", window.scrollY > 400);
       });
 
-      /* -------------------------------------------------------
-   HAMBURGER
-------------------------------------------------------- */
       const ham = document.getElementById("hamburger");
       const navLinksEl = document.getElementById("navLinks");
       ham.addEventListener("click", () => {
@@ -259,9 +279,6 @@
         });
       });
 
-      /* -------------------------------------------------------
-   STAT COUNTERS
-------------------------------------------------------- */
       function animateCounter(el) {
         const target = parseInt(el.dataset.target);
         let n = 0;
@@ -283,9 +300,6 @@
         { threshold: 0.5 },
       ).observe(document.querySelector(".hero-stats"));
 
-      /* -------------------------------------------------------
-   FORM
-------------------------------------------------------- */
       function handleForm(e) {
         e.preventDefault();
         const btn = document.getElementById("sendBtn");
@@ -300,18 +314,12 @@
         }, 3000);
       }
 
-      /* -------------------------------------------------------
-   BACK TO TOP
-------------------------------------------------------- */
       document
         .getElementById("back-top")
         .addEventListener("click", () =>
           window.scrollTo({ top: 0, behavior: "smooth" }),
         );
 
-      /* -------------------------------------------------------
-   INIT
-------------------------------------------------------- */
       renderPortfolio();
       observeElements();
       setTimeout(observeElements, 400);
