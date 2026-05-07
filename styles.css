@@ -279,7 +279,11 @@
   transform: none;
   transition-delay: 1.35s;
 }
-
+.stagger.visible > *:nth-child(15) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1.45s;
+}
       #progress-bar {
         position: fixed;
         top: 0;

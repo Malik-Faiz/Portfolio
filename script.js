@@ -97,6 +97,13 @@ const projects = [
     desc: "A comprehensive web solution for managing school operations, including student, teacher, and administrative tasks. Covers attendance, grading, timetable management, and parent communication.",
     tags: ["Laravel", "HTML/CSS", "MySQL", "Web App"],
   },
+  {
+  title: "AI-Augmented OT Security Audit using CAI Framework",
+  category: "AI & LLM",
+  img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80",
+  desc: "Evaluated the CAI framework for Industry 4.0 Operational Technology (OT) security environments. Studied AI agent design including Agents, Patterns, and Brain-Hands architecture. Compared AI-driven security analysis with traditional tools such as Nmap and OpenVAS. Installed and configured CAI on Ubuntu VM using a local LLM (Ollama). Developed a demo where AI agents executed safe network scans via natural language commands.",
+  tags: ["AI Security", "LLMs", "Ubuntu", "Nmap", "OpenVAS", "CAI Framework", "Ollama", "Industry 4.0"],
+},
 ];
 
       const ROLES = [
