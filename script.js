@@ -1,104 +1,103 @@
 const projects = [
-        {
-          title: "AI Agent – Intelligent Cobot for Education",
-          category: "AI & LLM",
-          img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80",
-          desc: "Researching and developing a smart collaborative robot (Cobot) that adapts its role as teacher, student, or peer. The robot uses AI to clarify topics for shy students and help teachers prepare learning materials efficiently. Ongoing research project at UPPA.",
-          tags: ["Python", "Robotics", "AI Agent", "Cobot Frameworks", "NLP"],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "Intelligent AI Agent Systems with RAG",
-          category: "AI & LLM",
-          img: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&q=80",
-          desc: "Engineered intelligent AI agent systems with Retrieval-Augmented Generation (RAG) for enhanced search functionality. Implemented multi-agent communication using Google Pub/Sub to coordinate distributed AI workflows with semantic search.",
-          tags: ["Python", "RAG", "FAISS", "Google Cloud", "LLM", "Embeddings"],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "Deepfake Detection System",
-          category: "Computer Vision",
-          img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80",
-          desc: "Contributed to a deepfake detection project to distinguish between real and GAN-generated fake images. Pre-processed and augmented images to prevent overfitting and increased pipeline accuracy by 12% using fine-tuned MobileNet-v3.",
-          tags: [
-            "Python",
-            "TensorFlow",
-            "Keras",
-            "OpenCV",
-            "MobileNet-v3",
-            "CNN",
-          ],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "Tanzania Deforestation Monitor",
-          category: "Machine Learning",
-          img: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80",
-          desc: "Collaborated on a real-time monitoring system for deforestation in Tanzania's Mangrove Forest. Led deployment efforts, built an interactive geospatial dashboard, and deployed trained ML models to monitor environmental change in real-time.",
-          tags: ["Python", "GIS Tools", "Dashboard", "Computer Vision", "ML"],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "Student Success Prediction",
-          category: "Machine Learning",
-          img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
-          desc: "Developed a machine learning model achieving 87% accuracy to predict student success based on academic and demographic data. Helps institutions identify at-risk students early and enhance overall performance outcomes.",
-          tags: [
-            "Python",
-            "Scikit-learn",
-            "Predictive Modeling",
-            "Feature Engineering",
-          ],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "NexaCareer – FYP Platform",
-          category: "Web Development",
-          img: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80",
-          desc: "Final Year Project — a specialized software platform for IT job fairs, seamlessly connecting final-year students with companies. Features an AI module for automatic CV classification and intelligent candidate-company matching.",
-          tags: ["React", "Node.js", "MySQL", "AI", "REST API", "Laravel"],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "Dog Breed Prediction",
-          category: "Computer Vision",
-          img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
-          desc: "Built a deep neural network to classify dog breeds from images using advanced computer vision techniques. Leverages TensorFlow and Keras for model architecture with high classification accuracy across multiple breeds.",
-          tags: ["TensorFlow", "Keras", "Python", "Deep Learning", "CNN"],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "Mango Leaf Disease Detection",
-          category: "Computer Vision",
-          img: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=600&q=80",
-          desc: "Created a computer vision-based model to detect diseases in mango leaves for early agricultural diagnosis and disease management. Helps the agricultural sector with preventive decision-making using image classification.",
-          tags: [
-            "Python",
-            "OpenCV",
-            "CNN",
-            "Computer Vision",
-            "Agriculture AI",
-          ],
-          github: "#",
-          demo: "#",
-        },
-        {
-          title: "Property Management System",
-          category: "Web Development",
-          img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
-          desc: "A full-featured web platform to streamline property listing, management, and transactions. Built with Laravel for robust backend operations, MySQL for data persistence, and a clean responsive frontend for agents and buyers.",
-          tags: ["Laravel", "MySQL", "HTML/CSS", "PHP", "Web App"],
-          github: "#",
-          demo: "#",
-        },
-      ];
+  {
+    title: "AI Agent – Intelligent Cobot for Education",
+    category: "AI & LLM",
+    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80",
+    desc: "Researching and developing a smart collaborative robot (Cobot) that adapts its role as teacher, student, or peer. The robot uses AI to clarify topics for shy students and help teachers prepare learning materials efficiently. Ongoing research project at UPPA.",
+    tags: ["Python", "Robotics", "AI Agent", "Cobot Frameworks", "NLP"],
+  },
+  {
+    title: "Intelligent AI Agent Systems with RAG",
+    category: "AI & LLM",
+    img: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&q=80",
+    desc: "Engineered intelligent AI agent systems with Retrieval-Augmented Generation (RAG) for enhanced search functionality. Implemented multi-agent communication using Google Pub/Sub to coordinate distributed AI workflows with semantic search.",
+    tags: ["Python", "RAG", "FAISS", "Google Cloud", "LLM", "Embeddings"],
+  },
+  {
+    title: "Deepfake Detection System",
+    category: "Computer Vision",
+    img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80",
+    desc: "Contributed to a deepfake detection project to distinguish between real and GAN-generated fake images. Pre-processed and augmented images to prevent overfitting and increased pipeline accuracy by 12% using fine-tuned MobileNet-v3.",
+    tags: ["Python", "TensorFlow", "Keras", "OpenCV", "MobileNet-v3", "CNN"],
+  },
+  {
+    title: "Tanzania Deforestation Monitor",
+    category: "Machine Learning",
+    img: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80",
+    desc: "Collaborated on a real-time monitoring system for deforestation in Tanzania's Mangrove Forest. Led deployment efforts, built an interactive geospatial dashboard, and deployed trained ML models to monitor environmental change in real-time.",
+    tags: ["Python", "GIS Tools", "Dashboard", "Computer Vision", "ML"],
+  },
+  {
+    title: "Student Success Prediction",
+    category: "Machine Learning",
+    img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    desc: "Developed a machine learning model achieving 87% accuracy to predict student success based on academic and demographic data. Helps institutions identify at-risk students early and enhance overall performance outcomes.",
+    tags: ["Python", "Scikit-learn", "Predictive Modeling", "Feature Engineering"],
+  },
+  {
+    title: "NexaCareer – FYP Platform",
+    category: "Web Development",
+    img: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80",
+    desc: "Final Year Project — a specialized software platform for IT job fairs, seamlessly connecting final-year students with companies. Features an AI module for automatic CV classification and intelligent candidate-company matching.",
+    tags: ["React", "Node.js", "MySQL", "AI", "REST API", "Laravel"],
+  },
+  {
+    title: "Dog Breed Prediction",
+    category: "Computer Vision",
+    img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
+    desc: "Built a deep neural network to classify dog breeds from images using advanced computer vision techniques. Leverages TensorFlow and Keras for model architecture with high classification accuracy across multiple breeds.",
+    tags: ["TensorFlow", "Keras", "Python", "Deep Learning", "CNN"],
+  },
+  {
+    title: "Mango Leaf Disease Detection",
+    category: "Computer Vision",
+    img: "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=600&q=80",
+    desc: "Created a computer vision-based model to detect diseases in mango leaves for early agricultural diagnosis and disease management. Helps the agricultural sector with preventive decision-making using image classification.",
+    tags: ["Python", "OpenCV", "CNN", "Computer Vision", "Agriculture AI"],
+  },
+  {
+    title: "Property Management System",
+    category: "Web Development",
+    img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+    desc: "A full-featured web platform to streamline property listing, management, and transactions. Built with Laravel for robust backend operations, MySQL for data persistence, and a clean responsive frontend for agents and buyers.",
+    tags: ["Laravel", "MySQL", "HTML/CSS", "PHP", "Web App"],
+  },
+  {
+    title: "Image Processing Filters in MATLAB",
+    category: "Machine Learning",
+    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80",
+    desc: "Developed a MATLAB app to apply image processing filters on live images, enabling real-time object detection, noise removal, and various transformations. Utilized the Image Processing Toolbox for efficient filter implementation and visualization.",
+    tags: ["MATLAB", "Image Processing Toolbox", "Computer Vision", "Real-time Processing"],
+  },
+  {
+    title: "Global Opportunities Platform",
+    category: "Web Development",
+    img: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80",
+    desc: "A web platform that connects users with scholarships, jobs, and courses for global academic and professional success. Designed to bridge the gap between opportunities and aspiring individuals worldwide.",
+    tags: ["Laravel", "HTML/CSS", "MySQL", "Web App"],
+  },
+  {
+    title: "Barber Saloon Management System",
+    category: "Web Development",
+    img: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80",
+    desc: "A Laravel-powered web application for efficient salon operations, including appointment scheduling, client management, and online booking. Streamlines day-to-day salon workflows for both staff and customers.",
+    tags: ["Laravel", "HTML/CSS", "MySQL", "Web App"],
+  },
+  {
+    title: "Hospital Management System",
+    category: "Web Development",
+    img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80",
+    desc: "A traditional web-based system for managing hospital operations, including entities like patients, doctors, and paramedics. Supports appointment tracking, medical records, and administrative management.",
+    tags: ["Laravel", "HTML/CSS", "MySQL", "Web App"],
+  },
+  {
+    title: "School Management System",
+    category: "Web Development",
+    img: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80",
+    desc: "A comprehensive web solution for managing school operations, including student, teacher, and administrative tasks. Covers attendance, grading, timetable management, and parent communication.",
+    tags: ["Laravel", "HTML/CSS", "MySQL", "Web App"],
+  },
+];
 
       const ROLES = [
         "AI/ML Engineer",
@@ -166,14 +165,6 @@ const projects = [
                   <button class="overlay-btn" onclick="openModal(${idx})" aria-label="View Details"><i class="fas fa-expand-alt"></i></button>
                   <span class="ovl-tip">View Details</span>
                 </div>
-                <div class="ovl-wrap">
-                  <a href="${p.demo}" class="overlay-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                  <span class="ovl-tip">Live Demo</span>
-                </div>
-                <div class="ovl-wrap">
-                  <a href="${p.github}" class="overlay-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                  <span class="ovl-tip">GitHub</span>
-                </div>
               </div>
             </div>
             <div class="portfolio-meta"><h4>${p.title}</h4><span>${p.category}</span></div>
@@ -191,8 +182,6 @@ const projects = [
         document.getElementById("modalTitle").textContent = p.title;
         document.getElementById("modalCategory").textContent = p.category;
         document.getElementById("modalDesc").textContent = p.desc;
-        document.getElementById("modalDemo").href = p.demo;
-        document.getElementById("modalGithub").href = p.github;
         document.getElementById("modalTags").innerHTML = p.tags
           .map((t) => `<span class="modal-tag">${t}</span>`)
           .join("");

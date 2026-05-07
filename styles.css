@@ -254,6 +254,32 @@
   transform: none;
   transition-delay: 0.85s;
 }
+.stagger.visible > *:nth-child(10) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.95s;
+}
+.stagger.visible > *:nth-child(11) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1.05s;
+}
+.stagger.visible > *:nth-child(12) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1.15s;
+}
+.stagger.visible > *:nth-child(13) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1.25s;
+}
+.stagger.visible > *:nth-child(14) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 1.35s;
+}
+
       #progress-bar {
         position: fixed;
         top: 0;
