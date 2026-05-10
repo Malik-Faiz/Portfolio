@@ -111,7 +111,7 @@ const projects = [
         "LLM Systems Builder",
         "Data Scientist",
         "Computer Vision Expert",
-        "Backend Developer",
+        "Software Developer",
         "Master's Student @ UPPA",
       ];
       const NAME_STR = "Malik Faiz ur Rehman";
